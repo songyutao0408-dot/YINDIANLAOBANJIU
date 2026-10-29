@@ -1,0 +1,8 @@
+node_modules/
+public/song.mp3
+out/
+*.log
+__pycache__/
+public/lyrics.json
+public/manifest.json
+public/lyrics.lrc

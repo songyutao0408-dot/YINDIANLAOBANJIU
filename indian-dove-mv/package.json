@@ -1,0 +1,30 @@
+{
+  "name": "indian-dove-mv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc",
+    "analyze": "python tools/analyze_audio.py",
+    "still": "remotion still src/index.ts IndianDoveMV checkpoints/01-timing-slate.png --frame=860",
+    "preview": "remotion render src/index.ts IndianDoveMV previews/01-timing-smoke.mp4 --frames=840-887 --scale=0.5",
+    "render": "remotion render src/index.ts IndianDoveMV final/indian-dove-mv-1080p.mp4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  },
+  "private": true
+}

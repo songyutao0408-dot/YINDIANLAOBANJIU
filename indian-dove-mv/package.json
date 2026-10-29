@@ -9,7 +9,11 @@
     "analyze": "python tools/analyze_audio.py",
     "still": "remotion still src/index.ts IndianDoveMV checkpoints/01-timing-slate.png --frame=860",
     "preview": "remotion render src/index.ts IndianDoveMV previews/01-timing-smoke.mp4 --frames=840-887 --scale=0.5",
-    "render": "remotion render src/index.ts IndianDoveMV final/indian-dove-mv-1080p.mp4"
+    "render": "remotion render src/index.ts IndianDoveMV final/indian-dove-mv-1080p.mp4",
+    "cast": "remotion still src/index.ts CastSheet checkpoints/02-cast-sheet.png --frame=12",
+    "expressions": "remotion still src/index.ts ExpressionSheet checkpoints/02-expressions.png --frame=12",
+    "poses": "remotion still src/index.ts PoseSheet checkpoints/02-poses.png --frame=12",
+    "character-preview": "remotion render src/index.ts CharacterMotion previews/02-character-motion.mp4 --scale=0.5"
   },
   "keywords": [],
   "author": "",

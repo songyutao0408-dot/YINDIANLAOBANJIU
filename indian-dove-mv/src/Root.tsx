@@ -1,3 +1,4 @@
+import {CastSheet, ExpressionSheet, PoseSheet, CharacterMotion} from './CharacterSheets';
 import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, Audio, Composition, staticFile, useCurrentFrame, delayRender, continueRender, cancelRender} from 'remotion';
 import {manifest,sectionAt,lyricAt} from './timeline';
@@ -16,4 +17,4 @@ const TimingSlate:React.FC = () => {
   <div style={{fontSize:24,position:'absolute',bottom:80}}>技术校验画面 · 非最终视觉效果</div>
  </AbsoluteFill>;
 };
-export const Root:React.FC=()=> <Composition id="IndianDoveMV" component={TimingSlate} width={1920} height={1080} fps={24} durationInFrames={manifest.durationInFrames}/>;
+export const Root:React.FC=()=> <><Composition id="IndianDoveMV" component={TimingSlate} width={1920} height={1080} fps={24} durationInFrames={manifest.durationInFrames}/><Composition id="CastSheet" component={CastSheet} width={2400} height={1800} fps={24} durationInFrames={240}/><Composition id="ExpressionSheet" component={ExpressionSheet} width={1920} height={1800} fps={24} durationInFrames={240}/><Composition id="PoseSheet" component={PoseSheet} width={2400} height={850} fps={24} durationInFrames={240}/><Composition id="CharacterMotion" component={CharacterMotion} width={1920} height={1080} fps={24} durationInFrames={240}/></>;
